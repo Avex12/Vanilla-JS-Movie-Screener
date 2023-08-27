@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Screener in Javascript</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body class="bg-gray-500">
+    <main class="h-screen flex flex-col justify-center items-center">
+        <!-- {Card} -->
+        <div class="max-w-md mx-auto bg-white rounded-xl overflow-hidden shadow-md md:max-w-xl">
+            <img id="movie_poster"
+                src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ5ODE4MTY2NV5BMl5BanBnXkFtZTgwMzM2NzEzMDI@._V1_UY209_CR0,0,140,209_AL_.jpg"
+                alt="Collateral Beauty (2016) Poster" class="w-full h-56 object-cover">
+            <div class="px-6 py-4">
+                <div class="text-xl font-semibold text-gray-800 mb-2"><span id="movie_name">Collateral Beauty
+                        (2016)</span></div>
+                <p class="text-gray-600 text-base">
+                    <span id="movie_director" class="font-semibold">Director:</span>
+                    <br>
+                    <span id="movie_genre" class="font-semibold">Genre:Drama, Romance :</span> <br>
+                    <span id="movie_year" class="font-semibold">Year:2016 </span> <br>
+                    <span id="movie_rating" class="font-semibold">Rating:7.0:</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- {Buttons} -->
+        <div class="mt-4 text-center">
+            <button class="bg-black hover:opacity-70 text-white font-bold py-2 px-4 rounded-md mr-2"
+                id="prevBtn">Previous</button>
+            <button class="bg-black  hover:opacity-70 text-white font-bold py-2 px-4 rounded-md"
+                id="nextBtn">Next</button>
+        </div>
+
+
+    </main>
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>
